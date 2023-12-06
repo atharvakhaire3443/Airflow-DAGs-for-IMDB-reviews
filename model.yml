@@ -1,0 +1,36 @@
+cluster:
+  name: IMDB-Model
+  emr-version: emr-6.15.0
+  log-uri: s3://dag-emr-logs/
+  instances:
+    instance-groups:
+      master:
+        name: Master Node
+        market: ON_DEMAND
+        instance-role: MASTER
+        instance-type: m5.xlarge
+        instance-count: 1
+      core:
+        name: Core Nodes
+        market: ON_DEMAND
+        instance-role: CORE
+        instance-type: m5.xlarge
+        instance-count: 2
+      task:
+        name: Task Nodes
+        market: ON_DEMAND
+        instance-role: TASK
+        instance-type: m5.xlarge
+        instance-count: 6
+    ec2-subnet-id: subnet-00a64607baeea1ad6
+    ec2-key-name: Khaire
+    keep-job-flow-alive-when-no-steps: True
+    termination-protected: False
+  bootstrap-actions: 
+    name: install textstat
+    path: s3://imdb-cs777/scripts/install-textstat.sh
+  applications: spark,hadoop
+  job-flow-role: EMR_EC2_DefaultRole
+  service-role: EMR_DefaultRole
+
+
