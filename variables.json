@@ -1,0 +1,13 @@
+{
+    "ARTISTS": "avicii,lil nas x,taylor swift,eminem,rema,selena gomez,ed sheeran,jeremy zucker,post malone,coldplay,zayn,lana del rey,one direction,harry styles,drake,the weekend,juice wrld,5 seconds of summer,justin bieber,nick jonas,dayglow,joji,ksi,stephan sanchez,bts,fetty wap,pitbull,chris brown,bruno mars,shakira,kygo,hardwell,ellie goulding,aurora,imagine dragons,boy in space,the kid laroi,the beatles,michael jackson,the rolling stones,olivia rodrigo,sza,doja cat,travis scott,dua lipa,21 savage,kendrick lamar,future,katy perry,tate mcrae,metallica,lil baby,adele,hozier,lewis capaldi,queen,kodak black,frank ocean,martin garrix,arctic monkeys,troye sivan,billie eilish,jack harlow,beyonce,glass animals,ariana grande,elvis presley,bon jovi,khalid,halsey,lady gaga,elton john,camilla cabello,lil wayne,maroon 5,shawn mendes,madonna,mariah carey,prince,usher,led zeppelin,jay-z,carpenters,katy perry,alicia keys,miley cyrus,the black eyed peas,aerosmith,justin timberlake,pink floyd,kanye west,linkin park,carrie underwood,george michael,50-cent,ludacris,kelly clarkson,garth brooks,whitney houston,janet jackson",
+    "AWS_ACCESS_KEY": "",
+    "AWS_SECRET_KEY": "",
+    "BUCKET_NAME": "imdb-cs777",
+    "FEATURES_FOLDER": "s3://imdb-cs777/Features",
+    "FILE_LIST": "sample.json",
+    "MODE": "full",
+    "MODEL": "NaiveBayes",
+    "MODEL_WORKER_NODES": 8,
+    "PREPROCESSING_WORKER_NODES": 4,
+    "RAW_FOLDER": "IMDB reviews - large"
+}
